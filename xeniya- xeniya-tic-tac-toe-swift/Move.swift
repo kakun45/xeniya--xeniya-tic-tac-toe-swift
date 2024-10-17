@@ -7,6 +7,18 @@
 
 import Foundation
 
+func randomMove() -> Move {
+    //    dont put in struct bc we didn't make the choice yet
+    let choice = Int.random(in: 1...3)
+    if choice == 1 {
+        return Move(sign: .rock)
+    } else if choice == 2 {
+        return Move(sign: .paper)
+    } else {
+        return Move(sign: .scissors)
+    }
+}
+
 // one of 3 ways to make a type
 enum Sign {
     case rock
