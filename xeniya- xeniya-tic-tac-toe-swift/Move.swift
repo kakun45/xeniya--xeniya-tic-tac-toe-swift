@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 func randomMove() -> Move {
     //    dont put in struct bc we didn't make the choice yet
     let choice = Int.random(in: 1...3)
